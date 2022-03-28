@@ -1,7 +1,6 @@
 import express from "express";
+import { getIndex } from '../controller/MusicasController.js'
 
-const routes = express.Router()
+export const routes = express.Router()
 
-routes.get("/", (req, res) => {
-
-})
+routes.get("/", getIndex)
