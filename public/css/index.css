@@ -16,12 +16,30 @@ body{
 main{
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
-    justify-content: center;
+    gap: 10px;
+    justify-content: start;
     width: 100%;
 }
 
-header.tituloDaPagina{
+@keyframes go-back {
+    from {
+      transform: translatey(5px);
+    }
+    to {
+      transform: translatey(-5px);
+    }
+  }
+
+@keyframes color-rotate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.tituloDaPagina{
     padding: 2rem;
     display: flex;
     text-align: center;
@@ -31,8 +49,18 @@ header.tituloDaPagina{
     font-weight: bolder;
 }
 
-header.tituloDaPagina h1{
+.tituloDaPagina h1{
     color: #832ED1;
+}
+
+.tituloDaPagina {
+    animation: go-back 0.9s infinite alternate;
+  }
+  
+.tituloDaPagina h1:hover{
+    animation: color-rotate 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
 }
 
 .welcome{
@@ -54,6 +82,17 @@ header.tituloDaPagina h1{
     border-bottom-right-radius: 12px;
 }
 
+.welcome p:hover {
+    background-color: #832ED1;
+    padding: 2rem;
+    font-size: larger;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 50px;
+    transition: all .1s ease-out;
+}
+
 .tech{
     display: flex;
     text-align: center;
@@ -72,6 +111,17 @@ header.tituloDaPagina h1{
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 50px;
+}
+
+.tech p:hover {
+    background-color: #832ED1;
+    padding: 1.3rem;
+    font-size: larger;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 12px;
+    transition: all .1s ease-in-out;
 }
 
 .card-container{
