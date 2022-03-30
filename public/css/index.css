@@ -21,18 +21,26 @@ main{
     width: 100%;
 }
 
+@keyframes expandir-borda {
+    0% { 
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+    100% {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+}
+
 @keyframes border-effect {
-    0%    {border-top-left-radius: 12px;
+    0%    {border-top-left-radius: 25px;
         border-bottom-left-radius: 50px;
         border-top-right-radius: 50px;
-        border-bottom-right-radius: 12px;}
-    50%{ border-top-left-radius: 25px;
-        border-bottom-left-radius: 6px;
-        border-top-right-radius: 6px;
         border-bottom-right-radius: 25px;}
-    100%  { border-top-left-radius: 50px;
-        border-bottom-left-radius: 12px;
-        border-top-right-radius: 12px;
+    100%{ border-top-left-radius: 50px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
         border-bottom-right-radius: 50px;}
   }
 
@@ -95,11 +103,10 @@ main{
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 12px;
+    animation: border-effect .9s infinite alternate;
 }
 
-.welcome p:hover {
-    animation: border-effect 2s infinite alternate;
-}
+
 
 .tech{
     display: flex;
@@ -113,17 +120,12 @@ main{
 
 .tech p{
     background-color: #832ED1;
-    padding: 1.3rem;
+    padding: 1.4rem;
     font-size: larger;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 50px;
+    border-radius: 30px; 
+    animation: expandir-borda .9s infinite alternate;
 }
 
-.tech p:hover {
-    animation: border-effect 2s infinite alternate;
-}
 
 .card-container{
     justify-content: space-around;
