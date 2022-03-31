@@ -19,22 +19,29 @@
             <p>Nesse projeto foi usado Postgres14, HTML, CSS, EJS</p>
         </div>
     </div>
+    <div class="add">
+        <a href="https://localhost:3000/adicionar">
+        <p>Adicione sua música!</p>
+    </a>
+    </div>
 <main>
+    <% musicas.forEach(element => { %>
     <div class="card-container">
         <header class="card-header">
-            <h3> NOME DA MUSICA </h3>
+            <h3> <%= element.nome %> </h3>
         </header>
         <div class="card-img">
-            <img src="https://pbs.twimg.com/media/EvqegI4WYAYcMCk.jpg" alt="CAPA DO ALBUM">
+            <img src="<%= element.img %>>" alt="CAPA DO ALBUM">
         </div>
         <div class="card-artista">
-            <p>Artista</p>
+            <p><%= element.artista %></p>
         </div>
         <div class="card-footer">
-            <span> Albúm </span>
-            <span> Ano </span>
+            <span> <%= element.album %> </span>
+            <span> <%= element.ano %> </span>
         </div>
-    </div>   
+    </div> 
+    <% }) %>  
 </main>
 </body>
 </html>
