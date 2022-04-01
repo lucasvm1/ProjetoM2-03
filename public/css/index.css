@@ -228,6 +228,6 @@ a {
 
 .card-footer {
   display: flex;
-  width: 65%;
-  justify-content: space-between;
+  width: 95%;
+  justify-content: space-around;
 }
