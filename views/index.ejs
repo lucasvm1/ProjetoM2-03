@@ -26,7 +26,7 @@
     </div>
 <main>
     <% musicas.forEach(element => { %>
-        <a href="/detalhes">
+        <a href="/detalhes/<%= element.id %>">
     <div class="card-container">
         <header class="card-header">
             <h3> <%= element.nome %> </h3>
