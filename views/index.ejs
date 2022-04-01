@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
     <title>Playlist</title>
-</head>
-<header class="tituloDaPagina">
+  </head>
+  <header class="tituloDaPagina">
     <h1>Playlist</h1>
-</header>
-<body>
+  </header>
+  <body>
     <div class="resumo">
-        <div class="welcome">
-            <p>Bem-vindo a Playlist!</p>
-        </div>
-        <div class="tech">
-            <p>Nesse projeto foi usado Postgres14, HTML, CSS, EJS</p>
-        </div>
+      <div class="welcome">
+        <p>Bem-vindo a Playlist!</p>
+      </div>
+      <div class="tech">
+        <p>Nesse projeto foi usado Postgres14, HTML, CSS, EJS</p>
+      </div>
     </div>
     <div class="add">
-        <a href="/adicionar">
+      <a href="/adicionar">
         <p>Adicione sua música!</p>
-    </a>
+      </a>
     </div>
-<main>
-    <% musicas.forEach(element => { %>
-        <a href="/detalhes/<%= element.id %>">
-    <div class="card-container">
-        <header class="card-header">
-            <h3> <%= element.nome %> </h3>
-        </header>
-        <div class="card-img">
-            <img src="<%= element.img %>>" alt="CAPA DO ALBUM">
-        </div>
-        <div class="card-artista">
+    <main>
+      <% musicas.forEach(element => { %>
+      <a href="/detalhes/<%= element.id %>">
+        <div class="card-container">
+          <header class="card-header">
+            <h3><%= element.nome %></h3>
+          </header>
+          <div class="card-img">
+            <img src="<%= element.img %>>" alt="CAPA DO ALBUM" />
+          </div>
+          <div class="card-artista">
             <p><%= element.artista %></p>
-        </div>
-        <div class="card-footer">
+          </div>
+          <div class="card-footer">
             <span> <%= element.album %> </span>
             <span> <%= element.ano %> </span>
+          </div>
         </div>
-    </div> 
-</a>
-    <% }) %>  
-</main>
-</body>
+      </a>
+      <% }) %>
+    </main>
+  </body>
 </html>
