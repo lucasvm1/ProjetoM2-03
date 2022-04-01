@@ -12,7 +12,10 @@ const __dirname = path.resolve(path.dirname(''))
 app.use(routes)
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
-app.listen(port, (req, res) =>{
-  console.log(`Rodando na porta ${port}`)
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+
+app.listen(port, (req, res) => {
+    console.log(`Rodando na porta ${port}`)
 })
 

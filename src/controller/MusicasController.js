@@ -11,3 +11,17 @@ export const getIndex = async (req, res) => {
             console.log(err.message)
     }
 }
+
+export const getDetalhes = async (req, res) => {
+    try{
+        const musica = await variados.findByPk(req.params.id)
+        res.render('detalhes.ejs',{
+            musica
+        })
+    }
+
+    catch(err)
+    {
+        console.log(err.message)
+    }
+}

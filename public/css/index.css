@@ -74,6 +74,10 @@ main{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 .tituloDaPagina{
     padding: 2rem;
     display: flex;
@@ -202,8 +206,6 @@ main{
     transition: all .7s ease-out;
     box-shadow: 5px 5px 5px 5px #3a0c64;
 }
-
-
 
 .card-container:hover span{
     transform: scale(90%);

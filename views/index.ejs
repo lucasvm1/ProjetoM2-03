@@ -20,12 +20,13 @@
         </div>
     </div>
     <div class="add">
-        <a href="https://localhost:3000/adicionar">
+        <a href="/adicionar">
         <p>Adicione sua música!</p>
     </a>
     </div>
 <main>
     <% musicas.forEach(element => { %>
+        <a href="/detalhes">
     <div class="card-container">
         <header class="card-header">
             <h3> <%= element.nome %> </h3>
@@ -41,6 +42,7 @@
             <span> <%= element.ano %> </span>
         </div>
     </div> 
+</a>
     <% }) %>  
 </main>
 </body>
