@@ -35,6 +35,7 @@ export const getDeletar = async (req, res) => {
         id: req.params.id,
       },
     });
+    res.redirect("/");
   } catch (err) {
     res.send({
       err: err.message,

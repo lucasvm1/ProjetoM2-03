@@ -13,3 +13,20 @@ export const connection = new Sequelize(
         dialect: 'postgres'
     }
 )
+
+
+/*
+export const connection = new Sequelize(
+    process.env.DATABASE_URL,
+    {
+        dialect: 'postgres'
+        dialectOptions: {
+            ssl: {
+                require: true,
+                rejectUnauthorized: false
+            }
+        }
+    }
+)
+
+*/

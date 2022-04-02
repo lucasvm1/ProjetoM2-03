@@ -9,7 +9,15 @@
   </head>
   <body>
     <main>
-      <iframe <%="musica.iframe" %> >></iframe>
+      <div class="card-container">
+        <div class="video">
+          <iframe <%= musica.iframe %>>  </iframe>
+        </div>
+        <div>
+          <span> <a href="/editar/<%= musica.id %>"> EDITAR </a></span>
+          <span> <a href="/apagar/<%= musica.id %>"> APAGAR </a></span>
+        </div>
+      </div>
     </main>
   </body>
 </html>

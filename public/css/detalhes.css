@@ -12,3 +12,26 @@
 body {
   background-color: #f3f3f3;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-container {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1rem 0rem 3rem;
+  width: 80%;
+  height: 800px;
+  background-color: #7021b9;
+  border-radius: 12px;
+  color: #f3f3f3;
+  font-weight: bold;
+  border: solid 5px #f3f3f399 ;
+}
+
