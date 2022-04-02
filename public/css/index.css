@@ -186,6 +186,7 @@ a {
   color: #f3f3f3;
   font-weight: bold;
   border: solid 5px #f3f3f399 ;
+  text-transform: uppercase;
 }
 
 .card-container:hover {
