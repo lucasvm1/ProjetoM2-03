@@ -13,6 +13,26 @@ body {
   background-color: #f3f3f3;
 }
 
+@keyframes go-back {
+  from {
+    transform: translatey(5px);
+  }
+  to {
+    transform: translatey(-5px);
+  }
+}
+
+.voltar{
+  width: 7%;
+  background-color: #7021b9;
+  border-radius: 200px;
+  margin: 2rem;
+}
+
+.voltar:hover{
+  animation: go-back 0.9s infinite alternate;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -26,7 +46,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 3rem 1rem 0rem 3rem;
-  width: 80%;
+  width: 1000px;
   height: 800px;
   background-color: #7021b9;
   border-radius: 12px;
@@ -35,3 +55,24 @@ main {
   border: solid 5px #f3f3f399 ;
 }
 
+.span{
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  margin-top: -7rem;
+}
+
+.span a{
+  text-decoration: none;
+  color: #f3f3f3;
+  background-color: #f3f3f320;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+.span a:hover{
+  text-decoration: none;
+  color: #7021b9;
+  background-color: #f3f3f3;
+  transition: 0.2s ease-in-out;
+}

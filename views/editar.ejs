@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/adicionar.css" />
+    <link rel="stylesheet" href="/css/editar.css" />
     <title>Editar</title>
   </head>
+  <header class="voltar">
+    <a href="/detalhes/<%= musica.id %> "> <img src="/img/seta.png" alt=""></a>
+  </header>
+  <header>
+    <h1> EDITAR MÚSICA </h1>
+    <BR></BR>
+  </header>
   <body>
-    <h1> Editar <%= musica.nome %> </h1>
     <main class="forms">
       <form action="/editar/<%= musica.id %>" method="post">
         <input type="text" name="nome" placeholder="Nome da música" value="<%= musica.nome %>" />

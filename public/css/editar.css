@@ -9,22 +9,6 @@
   align-items: center;
 }
 
-h1 {
-  color: #832ed1;
-  font-size: 36px;
-}
-
-@keyframes expandir-borda {
-  0% {
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-  }
-  100% {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
 @keyframes go-back {
   from {
     transform: translatey(5px);
@@ -32,6 +16,11 @@ h1 {
   to {
     transform: translatey(-5px);
   }
+}
+
+h1 {
+  color: #832ed1;
+  font-size: 50px;
 }
 
 .forms form {

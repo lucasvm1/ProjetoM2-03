@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="/css/detalhes.css" />
     <title>Document</title>
   </head>
+  <header class="voltar">
+    <a href="/"> <img src="/img/seta.png" alt=""></a>
+  </header>
   <body>
     <main>
       <div class="card-container">
         <div class="video">
           <iframe <%= musica.iframe %>>  </iframe>
         </div>
-        <div>
+        <div class="span">
           <span> <a href="/editar/<%= musica.id %>"> EDITAR </a></span>
           <span> <a href="/apagar/<%= musica.id %>"> APAGAR </a></span>
         </div>
