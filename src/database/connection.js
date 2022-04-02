@@ -11,6 +11,15 @@ export const connection = new Sequelize(
         host: process.env.DB_HOST,
         port: 5432,
         dialect: 'postgres',
+    }
+)
+
+
+/*
+export const connection = new Sequelize(
+    process.env.DATABASE_URL,
+    {
+        dialect: 'postgres'
         dialectOptions: {
             ssl: {
                 require: true,
@@ -19,3 +28,5 @@ export const connection = new Sequelize(
         }
     }
 )
+
+*/
