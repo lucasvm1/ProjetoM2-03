@@ -2,7 +2,9 @@ import { variados } from "../model/musicas.js";
 
 export const getIndex = async (req, res) => {
   try {
-    const musicas = await variados.findAll();
+    const musicas = await variados.findAll({
+        order:[["id"]]
+    })
     res.render("index.ejs", {
       musicas,
     });
