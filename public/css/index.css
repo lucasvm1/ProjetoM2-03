@@ -185,6 +185,7 @@ a {
   border-radius: 12px;
   color: #f3f3f3;
   font-weight: bold;
+  border: solid 5px #f3f3f399 ;
 }
 
 .card-container:hover {
@@ -207,11 +208,6 @@ a {
 
 .card-container:hover span {
   transform: scale(90%);
-  transition: all 0.7s ease-out;
-}
-
-.card-container:hover .card-artista {
-  transform: scale(115%);
   transition: all 0.7s ease-out;
 }
 

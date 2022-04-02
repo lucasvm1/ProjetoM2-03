@@ -1,0 +1,49 @@
+* {
+}
+
+@keyframes expandir-borda {
+    0% {
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+    }
+    100% {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+}
+
+.forms form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.forms input{
+    margin: .6rem;
+    width: 500px;
+    
+}
+
+button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: #832ed1;
+  margin: 3rem;
+  background-color: #f3f3f3;
+  padding: 1.4rem;
+  font-size: larger;
+  border: solid #832ed1;
+  border-radius: 30px;
+}
+
+button:hover {
+    background-color: #832ed1;
+    color: #f3f3f3;
+    animation: expandir-borda 0.4s infinite alternate;
+    cursor: pointer;
+  }
