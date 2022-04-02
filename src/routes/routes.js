@@ -1,5 +1,5 @@
 import express from "express";
-import { getIndex, getDetalhes, getDeletar, getAdicionar, postAdicionar } from '../controller/MusicasController.js'
+import { getIndex, getDetalhes, getDeletar, getAdicionar, postAdicionar, getEditar, postEditar } from '../controller/MusicasController.js'
 
 export const routes = express.Router()
 
@@ -9,3 +9,6 @@ routes.get('/apagar/:id', getDeletar)
 
 routes.get('/adicionar', getAdicionar)
 routes.post('/adicionar', postAdicionar)
+
+routes.get('/editar/:id', getEditar)
+routes.post('/editar/:id', postEditar)

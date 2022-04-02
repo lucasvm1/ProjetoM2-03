@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/adicionar.css" />
+    <title>Editar</title>
+  </head>
+  <body>
+    <h1> Editar <%= musica.nome %> </h1>
+    <main class="forms">
+      <form action="/editar/<%= musica.id %>" method="post">
+        <input type="text" name="nome" placeholder="Nome da música" value="<%= musica.nome %>" />
+        <input type="url" name="img" placeholder="Link da Imagem (LastFM)" value="<%= musica.img %>" />
+        <input
+          type="number"
+          name="ano"
+          placeholder="Ano de lançamento da música"
+          value="<%= musica.ano %>"
+        />
+        <input type="text" name="album" placeholder="Nome do Albúm" value="<%= musica.album %>" />
+        <input type="text" name="artista" placeholder=" Artista " value="<%= musica.artista %>"/>
+        <input class="iframe-case"
+          type="text"
+          name="iframe"
+          placeholder="iFrame do Youtube (Sem as aspas)"
+          value="<%= musica.iframe %>"
+        />
+
+        <button type="submit">Aplicar!</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -47,3 +47,8 @@ button:hover {
     animation: expandir-borda 0.4s infinite alternate;
     cursor: pointer;
   }
+
+.iframe-case{
+  word-wrap: break-all;
+  height: 200px;
+}
